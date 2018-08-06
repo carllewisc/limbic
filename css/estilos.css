@@ -1,0 +1,617 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/*NirmalaUI, Nirmala UI
+Normal
+19.5
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+header.header {
+	background: url('../img/bg-header.png') #000917ff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	/*max-height: 600px;*/
+	/*height: 100vh;*/
+	height: 700px;
+	color: rgba(243,243,243,255);
+}
+
+header .barra-navegacion {
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+    flex-wrap: wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+header .barra-navegacion .logo {
+	display: flex;
+}
+
+header .barra-navegacion .logo img {
+	margin: 2em;
+}
+
+header .barra-navegacion .logo h1 {
+	font-size: 1.4809375em;
+	margin-top: 1.4em;
+    padding-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: 500;
+}
+
+header .barra-navegacion .menu {
+	margin-right: 1em;
+	padding-bottom: 1em;
+}
+
+header .barra-navegacion .menu a {
+	color: rgba(243,243,243,255);
+	text-decoration: none;
+	margin-right: 1.5em;
+	/*font-size: 18px;*/
+}
+
+header .barra-navegacion .menu a:hover {
+	color: red;
+}
+
+header .slogan {
+    text-align: center;
+    /*width: 50%;*/
+    padding: 5em 0;
+    /*margin: 3em;*/
+    /*float: left;*/
+}
+
+header .slogan h2 {
+	font-size: 2.8125em;
+	font-weight: normal;
+}
+
+header .slogan h3 {
+	font-size: 1.875em;
+	border: 2px solid rgba(230,35,123,1);
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    padding: 0 .2em;
+}
+
+header .slogan p {
+	font-size: 1.265625em;
+}
+
+header .w50 {
+	float: left;
+}
+header .w50 img{
+	height: 100%;
+}
+
+/* ---- MAIN ---- */
+main {
+	/*background: url('img/bg-main.png') #000917ff;*/
+	background-color: #37356f;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	/*max-height: 600px;*/
+	/*height: 100vh;*/
+/* Si utilizo height: 700px el fondo se ve bien pero el contenido no*/
+	color: rgba(243,243,243,255);
+}
+
+main .titulo {
+	font-family: 'Comfortaa', cursive;
+	margin-top: 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.578125em;
+}
+
+main .titulo + p {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+main .mision, main .vision {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 2em;
+}
+
+main .mision header, main .vision header{
+	display: flex;
+	justify-content: center;
+}
+
+main .mision header img, main .vision header img{
+	margin-right: 2em;
+	display: inline-block;
+}
+
+main .mision header h2, main .vision header h2{
+	font-family: 'Comfortaa', cursive;
+	font-size: 2.578125em;
+	font-weight: normal;
+	margin: .4em;
+}
+
+main .servicios {
+	background: #ddd;
+}
+
+main .servicios .logo {
+    width: 39%;
+    float: left;
+}
+
+main .servicios .logo img {
+	max-width: 100%;
+}
+
+main .servicios .servicio {
+    width: 59%;
+    float: left;
+    /*background: #ddd;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .servicios .servicio h2{
+	text-align: center;
+	/*margin: 3em auto;*/
+	font-size: 3.28125em;
+	font-weight: normal;
+	width: 100%;
+	color: #000;
+}
+
+main .servicios .servicio div{
+	width: 32%;
+    text-align: center;
+    height: 150px;
+    float: left;
+}
+
+main .contenedor .servicios-descripcion {
+	width: 60%;
+	background: #000;
+}
+
+main .contenedor .servicios-descripcion .hijo {
+	width: 45%;
+	/*background: #010101;*/
+	float: left;
+	padding-left: 1em;
+}
+
+main .contenedor .servicios-descripcion .hijo:nth-child(odd) {
+	/*background: #000;*/
+	padding-left: 0;
+}
+
+main .servicios-descripcion .hijo header {
+	display: flex;
+}
+
+main .servicios-descripcion .hijo header h3 {
+    padding: 0 1em;
+    margin-top: .5em;
+}
+main .servicios-descripcion .hijo header h3 {
+	font-size: 1.453125em;
+	color: #95989aff;
+	font-weight: normal;
+}
+
+main .servicios-descripcion .hijo header img {
+/*	height: 4.25em;
+	width: 4.25em;*/
+	width: 50px;
+    height: 50px;
+}
+main .servicios-descripcion .hijo p {
+    margin-top: .6em;
+	margin-left: 3.7em;
+}
+
+main .taza {
+	width: 40%;
+	display: inline-block;
+    position: absolute;
+}
+
+main .taza img {
+	transform: translateY(-120px);
+}
+
+/* --- MAIN STATS --- */
+
+
+main .servicios .servicio .flex {
+	display: flex;
+	flex-direction: column;
+    margin-bottom: .6em;
+}
+
+main .servicios .servicio .flex div {
+	width: auto!important;
+}
+
+main .servicios .servicio .flex div img{
+/*	
+	modificado
+	height: 100px;
+	width: 100px;*/
+	vertical-align: top;
+}
+
+main .servicios .servicio .flex p{
+	color: #626262ff;
+	font-size: 1.171875em;
+}
+
+
+
+main .servicios-descripcion .hijo p {
+	font-size: 1.171875em;
+	color: #a7a7a7ff;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer.footer {
+	background: url('../img/bg-footer.png') #000917ff;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-size:cover;*/
+	background-size: cover;
+	/*max-height: 600px;*/
+	/*height: 100vh;*/
+	height: 700px;
+	color: rgba(243,243,243,255);
+}
+
+footer .contacto {
+	/*padding: 60px 0;*/ /* CODIGO CARLOS ARTURO*/
+	padding: 0 0 4.5em 0;
+}
+
+footer .contacto .contenedor-formulario {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+footer .contacto .contenedor-formulario .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #3895ea;
+	text-align: center;
+}
+
+footer .contacto .contenedor-formulario .formulario {
+	margin-top: 3em;
+	/*background: rgba(243,243,243,.5);*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .contacto .contenedor-formulario .info {
+	text-align: center;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-input{
+	color: #fff;
+	width: 45%;
+	margin-bottom: 0.9375em;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-input input{
+	width: 90%;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-textarea{
+	color: #fff;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-textarea textarea{
+/*	width:95%;
+	height: 95%;*/
+	min-width: 95.5%;
+	max-width: 95%;
+	min-height:70px;
+	max-height: 150px;
+	margin-bottom: 15px;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-input label,
+footer .contacto .contenedor-formulario .formulario .contenedor-textarea label{
+	font-size: 1.265625em;
+	display: block;
+	padding: 0 0 .2em .5em;
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-input input,
+footer .contacto .contenedor-formulario .formulario .contenedor-textarea textarea,
+footer .contacto .contenedor-formulario .formulario input[type="submit"] {
+	background: rgba(243,243,243,.5);
+}
+
+footer .contacto .contenedor-formulario .formulario .contenedor-input input:focus,
+footer .contacto .contenedor-formulario .formulario .contenedor-textarea textarea:focus{
+	outline: 0;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+	width: 45%;
+	margin-bottom: 15px;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+    border: 1px solid rgba(243,243,243,.5);
+    border-radius: 5px;
+	/*padding: 10px 20px;*/
+	font-size: 20px;
+	color:#a4a4a4;
+}
+
+footer .contacto .formulario textarea {
+	width: 100%;
+	height: 100px;
+	/*min-width: 100%;
+	max-width: 100%;*/
+	min-width: 100%%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 300px;
+	margin-bottom: 15px;
+}
+
+/*---------------------*/
+footer .contacto .contenedor-formulario .formulario .boton { 
+	font-size: 1.265625em;
+	margin: auto;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 8px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer .contacto .contenedor-formulario .titulo {
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	font-weight: 500;
+	font-size: 3.25125em;
+	color: #fff;
+}
+
+/*** PIE DE PAGINA ***/
+footer .pie-pagina{
+	background: #314344dd;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* align-content: center; */
+	align-items: center;
+	text-align: center;
+	margin-top: 3.3em;
+}
+
+footer .pie-pagina p{
+	color: #fff;	
+	font-size: 0.9375em;
+}
+
+footer .pie-pagina.contenedor {
+	max-width: none;
+}
+
+footer .pie-pagina  div{
+	/*display: flex;*/ /* FORMA */
+	display: inline-block;
+	color: #000;
+	text-align: center;
+}
+
+footer .pie-pagina  div{
+	/*display: flex;*/
+	display: inline-block;
+	color: #000;
+}
+
+footer .pie-pagina .titulo {
+	font-size: 1.4809375em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: 500;
+}
+
+footer .pie-pagina h1 .fa {
+	color: #fff;
+	font-size: 1.5em;
+	padding: 0 .7em;
+}
+
+footer .pie-pagina .border-derecho {
+    border-right: 1px solid #6d7678;/*#314344;*/
+    padding-right: .3em;
+    height: 150px;
+}
+
+.w24{
+	width: 20%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.w100{
+	width: 100%;
+}
+
+.padding-right{
+    padding-right: .5em;
+}
+
+
+/*13035016*/
+
+
+/* --- --- MEDIA QUERIES --- --- */
+@media screen and (min-width: 768px) {
+		main .contenedor {
+		padding-top: 5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* Header */
+	header .barra-navegacion {
+		flex-direction: column;
+		/*background: #000;*/
+	}
+
+	main .servicios .logo img {
+		/*width: 70%;*/
+	}
+
+	main .servicios .servicio div {
+		width: 50%;
+	}
+
+
+}
+
+@media screen and (max-width: 650px) {
+/*	body{
+		font-size: 18px;
+	}*/
+
+	header .barra-navegacion .menu {
+		margin-right: 0; 
+	}
+
+	header .barra-navegacion .menu a {
+		margin-right: .5em;
+	}
+
+	/* --- --- MAIN --- ---*/
+
+	main .contenedor .titulo + p{
+		/*background: #000;*/
+		margin-bottom: 1.5em;
+	}
+
+	main .mision, main .vision {
+	    width: 100%;
+	    text-align: center;
+	    padding: 2em;
+	}
+
+/*	Contenedor Servicios */
+
+	main .servicios .logo {
+		width: 100%;
+	}
+
+	main .servicios .servicio {
+		width: 100%;
+		/*background: peru;*/
+	}
+
+	main .servicios .servicios-descripcion {
+		width: 100%;
+		margin-top: 5em;
+		background: blue;
+	}
+
+	main .servicios .servicios-descripcion .hijo {
+		width: 100%;
+	} 
+
+	main .servicios .taza {
+		width: 100%;
+		position: initial;
+		/*background: yellow;*/
+	}
+
+	main .servicios .taza img {
+		transform: translateY(0);
+	}
+
+	/* Footer */
+	footer .contacto {
+		padding: 0;
+	}
+
+	footer .contacto .contenedor-formulario .formulario .contenedor-input{
+		width: 100%;
+		/*background: #000;*/
+	}
+
+	footer .contacto .contenedor-formulario .formulario .contenedor-input input {
+		width: 100%;
+	}
+	
+	footer .contacto .contenedor-formulario .formulario .contenedor-textarea textarea {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	main .servicios .servicio div {
+		width: 100%;
+	}
+
+	/* Footer */
+
+	footer .contacto .contenedor-formulario .titulo {
+		margin-bottom: .5em 0;
+	}
+
+	footer .contacto .contenedor-formulario .formulario {
+		margin-top: 0;
+	}
+	footer .contacto .contenedor-formulario .formulario .contenedor-input,
+	footer .contacto .contenedor-formulario .formulario .contenedor-textarea {
+		margin-bottom: 0;
+	}
+
+}
